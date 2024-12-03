@@ -1,13 +1,14 @@
 ###########
 # site.title
 
-title: Emil Jermann
+title: emil jermann
 description: My brain, and other things
 # baseurl: "/jekyllBear" # the subpath of your site, e.g. /blog/
 url: "https://emiljermann.com" # the base hostname & protocol for your site
 # host: 0.0.0.0
 email: emil.j.jermann@gmail.com
 author: Emil Jermann
+GitHub: https://github.com/emiljermann
 
 
 #########################
@@ -35,6 +36,9 @@ compress_html:
 #   style:    compressed
 
 collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
   my_tags:
     output: true
     permalink: /tagged/:slug/
@@ -60,9 +64,8 @@ exclude: [vendor]
 # Pages
 Blog: /blog
 About: /about
-Projects: /projects
 
-Resume: /assets/resume.pdf
+Resume: /assets/emiljermann_resume.pdf
 
 # Add general links to site pages here
 links:
@@ -71,4 +74,4 @@ links:
 
 # Add links for more focus here
 special_links:
-  "Search": https://duckduckgo.com
+  # "Search": https://duckduckgo.com

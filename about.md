@@ -5,4 +5,4 @@ description: Some general really interesting info about me
 permalink: /about
 ---
 
-I am a student studying CS and Statistics (thats one BS) at the University of Illinois Urbana-Champaign. I enjoy reading, climbing, running, and pretending that I drink more coffee than I actually do.
+I am a student studying CS and Statistics (thats one degree) at the University of Illinois Urbana-Champaign. I enjoy reading, climbing, running, and pretending that I drink more coffee than I actually do.

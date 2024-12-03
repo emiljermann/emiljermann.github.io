@@ -1,4 +1,5 @@
 /*
+Colors ripped from Ironman Arizona 2024 logo
 Iron Man orange: #a25230
 Iron Man green: #9dab84
 Iron Man grey: #8a7871
@@ -44,7 +45,7 @@ b {
 }
 
 a {
-    color: #3273dc;
+    color: #a35333;
     cursor: pointer;
     text-decoration: none;
 }
@@ -78,25 +79,32 @@ a:hover {
 
 /* @TODO: fix colors for navigation bar nav and about page nav*/
 
-.navigation-bar {
-    color: #313131;
+/* .navigation-bar {
+    color: #a35333;
     cursor: pointer;
     text-decoration: none;
 } /* E added this */
 
+/* .navigation-bar:hover {
+    color: #a35333;
+    cursor: pointer;
+    text-decoration: underline; 
+} E added this */ 
+
 nav {
     /* background-color: #FAF3E0; */
-    color: #4A4A4A;
+    color: #a35333;
 } /* E added this */
 
 nav a {
-    color: #78866B; /* E added this */
+    color: #a35333; /* E added this */
     text-decoration: none; /* E added this */
     margin-right: 10px;
 } 
 
 nav a:hover {
-    color: #5C7048;
+    color: #a35333;
+    text-decoration: underline;
 } /* E added this */
 
 textarea,
@@ -269,7 +277,7 @@ ul.blog-posts li span {
 }
 
 ul.blog-posts li a:visited {
-    color: #8b6fcb;
+    color: #612f1b;
 }
 
 /* discovery feed */

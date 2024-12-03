@@ -1,0 +1,48 @@
+---
+layout: compress
+---
+
+{% include head.html %}
+
+    <main>
+
+        {% include header.html %}
+
+        {{ content }}
+
+        <ul class="blog-posts">
+            {% assign project_list = '' | split: ',' %}
+            {% for project in site.projects %}
+            {% assign project_dir = project.path | split: '/' %}
+            {% if project_dir.size == 2 %} 
+            {% assign project_list = project_list | push: project %}
+            {% endif %}
+            {% endfor %}
+
+            {% if project_list.size == 0 %}
+            <li><em>Its just one of those slow periods I suppose.</em></li>
+            {% endif %}
+
+            {% for project in project_list %}
+            {% unless project == previous %}
+            <li>
+                <span>
+                    <i>
+                        <time datetime="2022-01-28" pubdate="">
+                            {{ project.date | date: "%b %-d, %Y" }}
+                        </time>
+                    </i>
+                </span>
+                <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
+            </li>
+            {% endunless %}
+            {% assign previous = project %}
+            {% endfor %}
+        </ul>
+
+    </main>
+
+    {% include footer.html %}
+
+</body>
+</html>
